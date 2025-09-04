@@ -1,0 +1,509 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    transition: background 0.3s ease;
+    z-index: 999;
+}
+
+nav .container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+nav img {
+    height: 5vh;
+}
+
+nav .nav-edit {
+    color: #0b2b42;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 999px;
+    transition: background 0.3s;
+}
+
+nav .nav-edit:hover {
+    color: #0758B2;
+}
+
+.navbar-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.btn-agendar img {
+    height: 22px;
+}
+
+.transparent {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.solid {
+    background: #ffffffcb;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.banner {
+    background: #d9d9d9;
+    padding: 6rem 2rem 4rem 2rem;
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    color: #202a44;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: white;
+    border-radius: 8px;
+    height: 100vh;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(216deg, #09e49c 0%, #0758B2 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: linear-gradient(216deg, #0758B2 0%, #09e49c 100%);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #c8d5f5;
+}
+
+body {
+    scrollbar-width: thin;
+}
+
+/*Inicio Header*/
+.navbar-custom {
+    transition: background 0.3s ease;
+
+}
+
+/* Adicionando uma classe para o navbar transparente inicial */
+.navbar-custom.transparent {
+    background: rgb(255, 255, 255); /* Torna o fundo completamente transparente */
+    backdrop-filter: blur(0px); /* Remove o blur inicial */
+    box-shadow: none; /* Remove a sombra inicial */
+}
+
+.navbar-custom.solid {
+    background: #ffffffcb;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.nav-link.active {
+    color: #0758B2 !important;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.5rem;
+}
+/*Fim Header*/
+
+/*Inicio topo*/
+/* Seção de destaque (Hero) */
+.hero-section {
+    background-image: url('adm.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    color: #fff;
+    min-height: 550px;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.hero-section > .container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Novo estilo para a Seção de Serviços */
+.services-wrapper {
+    margin-top: -100px; /* Puxa a seção de serviços para cima, sobrepondo o hero */
+    position: relative; /* Garante que a seção fique acima do hero */
+    z-index: 3; /* Z-index para a ordem de camadas */
+}
+
+.services-content-box {
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15); /* Sombra mais visível */
+    padding: 3rem; /* Espaçamento interno */
+}
+
+.service-card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.btn-primary {
+    background-color: #2e578a;
+    border-color: #2e578a;
+}
+.btn-primary:hover {
+    background-color: #254770;
+    border-color: #254770;
+}
+.btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+}
+.btn-outline-light:hover {
+    background-color: #fff;
+    color: #2e578a;
+}
+
+.btn-outline-dark {
+    border-color: #dee2e6;
+    color: #495057;
+}
+.btn-outline-dark:hover {
+    background-color: #dee2e6;
+    color: #212529;
+}
+/*Fim do topo*/
+
+/*sobre pequeno*/
+/* Seção "Sobre nós" */
+.about-us-section {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+}
+
+.about-us-section h2 {
+    color: #202a44;
+}
+
+.about-us-section p {
+    color: #495057;
+}
+
+/*Não util
+ Container da Imagem 
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%; 
+    overflow: hidden; 
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15); 
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+*/
+
+/* Estilo para o botão de solicitação */
+.btn-dark {
+    background-color: #2e5163;
+    border-color: #2e5163;
+}
+.btn-dark:hover {
+    background-color: #203a4b;
+    border-color: #203a4b;
+}
+/*fim do sobre*/
+
+/*Serviços*/
+
+/* Seção de Serviços Detalhados */
+.detailed-services-section {
+    background-color: #f9f9f9;
+    padding: 5rem 0;
+}
+
+.detailed-services-section h2 {
+    color: #202a44;
+}
+
+.detailed-services-section p {
+    color: #495057;
+}
+
+/* Estilo das abas de navegação (Nav-Pills) */
+.nav-pills .nav-link {
+    background-color: transparent;
+    color: #202a44; /* Cor do texto das abas */
+    border-radius: 0;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent; /* Adiciona uma borda na base */
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-link:hover {
+    color: #2e578a; /* Cor do hover para combinar com o site */
+    border-color: #dee2e6; /* Cor da borda no hover */
+}
+
+.nav-pills .nav-link.active {
+    background-color: transparent;
+    color: #2e578a; /* Cor do texto da aba ativa */
+    border-bottom: 2px solid #2e578a; /* Borda inferior para a aba ativa */
+}
+
+/* Estilo do conteúdo das abas */
+.tab-content {
+    background-color: #2e5163; /* Fundo do conteúdo das abas */
+    color: #fff; /* Cor do texto dentro do conteúdo */
+    padding: 2rem;
+    border-radius: 0.5rem;
+}
+
+.tab-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.tab-content ul li {
+    font-size: 1.1em;
+    line-height: 1.8;
+    position: relative;
+    padding-left: 20px;
+}
+
+.tab-content ul li::before {
+    content: ""; /* Conteúdo vazio para criar um elemento */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 8px; /* Tamanho do círculo */
+    height: 8px; /* Tamanho do círculo */
+    border-radius: 50%;
+    background-color: #09e49c; /* Cor do seu site */
+}
+
+/*fim de serviços*/
+
+/*Footer*/
+footer {
+    background: #202a44;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+.footer-custom {
+    background-color: #2e5163;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    position: relative;
+}
+.footer-custom a {
+    color: #ffffff;
+    text-decoration: none;
+}
+.footer-custom a:hover {
+    color: #f0f0f0;
+}
+.footer-custom ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-custom ul li {
+    margin-bottom: 10px;
+}
+.footer-custom .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #ffffff;
+}
+.footer-custom .social-icons a:hover {
+    color: #cccccc;
+}
+.footer-custom .logo-text {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #d1d1d1;
+    margin-top: 15px;
+}
+.footer-custom .section-title {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 1.1em;
+}
+.footer-custom .contact-info p {
+    margin-bottom: 5px;
+    color: #d1d1d1;
+}
+.footer-custom .partner-logos img {
+    max-height: 40px;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    filter: brightness(0) invert(1);
+}
+.footer-custom .inova-brasil-text {
+    font-size: 0.9em;
+    line-height: 1.4;
+    color: #d1d1d1;
+    margin-bottom: 20px;
+}
+.footer-custom .bottom-bar {
+    border-top: 1px solid #4a6f83;
+    padding-top: 20px;
+    margin-top: 30px;
+    color: #d1d1d1;
+    font-size: 0.85em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.footer-custom .bottom-bar .flags img {
+    height: 18px;
+    margin-left: 10px;
+}
+/*Fim do Footer*/
+
+
+/* ================================================= */
+/* AJUSTES DE RESPONSIVIDADE             */
+/* ================================================= */
+
+/* --- TELA DE TABLET (MAX-WIDTH: 992PX) --- */
+@media (max-width: 992px) {
+    /* Navbar */
+    .navbar-collapse {
+        background-color: #fff;
+        padding: 1rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 10px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none;
+    }
+
+    /* Hero Section */
+    .hero-section {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+    
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    /* Services Wrapper */
+    .services-wrapper {
+        margin-top: -60px; /* Reduz a margem para telas menores */
+    }
+
+    /* Cards de Serviço */
+    .services-content-box {
+        padding: 1.5rem;
+    }
+
+    /* Seção de Abas de Serviço */
+    .nav-pills {
+        justify-content: flex-start !important; /* Alinha as abas à esquerda */
+        flex-wrap: nowrap; /* Impede a quebra de linha das abas */
+        overflow-x: auto; /* Adiciona rolagem horizontal para as abas */
+    }
+    
+    .nav-pills .nav-item {
+        flex-shrink: 0; /* Impede que as abas encolham */
+    }
+
+    /* Seção "Sobre Nós" (Texto e Imagem) */
+    .about-us-section .row {
+        flex-direction: column-reverse; /* Inverte a ordem das colunas (imagem no topo) */
+    }
+
+    .about-us-section .image-wrapper {
+        margin-bottom: 2rem;
+    }
+}
+
+/* --- TELA DE CELULAR (MAX-WIDTH: 767PX) --- */
+@media (max-width: 767px) {
+    /* Hero Section */
+    .hero-section {
+        text-align: center !important; /* Centraliza o texto e os botões */
+    }
+
+    .hero-section .btn-lg {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* Seção de Abas de Serviço */
+    .nav-pills {
+        justify-content: flex-start;
+    }
+
+    /* Rodapé */
+    .footer-custom .d-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+}
