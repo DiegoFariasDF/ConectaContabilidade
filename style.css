@@ -47,6 +47,14 @@ nav .nav-edit:hover {
     gap: 1rem;
 }
 
+.logo-img {
+    background: #fff;        
+    border-radius: 15px;     
+    padding: 5px;            
+    height: 50px;        
+}
+
+
 .btn-agendar img {
     height: 22px;
 }
@@ -462,13 +470,6 @@ footer {
 
     .navbar-toggler:focus {
         box-shadow: none;
-    }
-
-    .logo-img {
-    background: #fff;        
-    border-radius: 15px;     
-    padding: 5px;            
-    height: 50px;        
     }
 
     /* Hero Section */
