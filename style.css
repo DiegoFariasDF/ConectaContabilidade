@@ -112,7 +112,7 @@ body {
 
 /* Adicionando uma classe para o navbar transparente inicial */
 .navbar-custom.transparent {
-    background: rgb(255, 255, 255); /* Torna o fundo completamente transparente */
+    background: #204361; 
     backdrop-filter: blur(0px); /* Remove o blur inicial */
     box-shadow: none; /* Remove a sombra inicial */
 }
@@ -189,12 +189,12 @@ body {
 }
 
 .btn-primary {
-    background-color: #2e578a;
-    border-color: #2e578a;
+    background-color: #204361;
+    border-color: #204361;
 }
 .btn-primary:hover {
-    background-color: #254770;
-    border-color: #254770;
+    background-color: #1c3a55;
+    border-color: #1c3a55;
 }
 .btn-outline-light {
     border-color: #fff;
@@ -202,7 +202,7 @@ body {
 }
 .btn-outline-light:hover {
     background-color: #fff;
-    color: #2e578a;
+    color: #204361;
 }
 
 .btn-outline-dark {
@@ -249,8 +249,8 @@ body {
 
 /* Estilo para o botão de solicitação */
 .btn-dark {
-    background-color: #2e5163;
-    border-color: #2e5163;
+    background-color: #204361;
+    border-color: #204361;
 }
 .btn-dark:hover {
     background-color: #203a4b;
@@ -287,19 +287,19 @@ body {
 }
 
 .nav-pills .nav-link:hover {
-    color: #2e578a; /* Cor do hover para combinar com o site */
+    color: #204361; /* Cor do hover para combinar com o site */
     border-color: #dee2e6; /* Cor da borda no hover */
 }
 
 .nav-pills .nav-link.active {
     background-color: transparent;
-    color: #2e578a; /* Cor do texto da aba ativa */
-    border-bottom: 2px solid #2e578a; /* Borda inferior para a aba ativa */
+    color: #204361; /* Cor do texto da aba ativa */
+    border-bottom: 2px solid #204361; /* Borda inferior para a aba ativa */
 }
 
 /* Estilo do conteúdo das abas */
 .tab-content {
-    background-color: #2e5163; /* Fundo do conteúdo das abas */
+    background-color: #204361; /* Fundo do conteúdo das abas */
     color: #fff; /* Cor do texto dentro do conteúdo */
     padding: 2rem;
     border-radius: 0.5rem;
@@ -342,7 +342,7 @@ footer {
 }
 
 .footer-custom {
-    background-color: #2e5163;
+    background-color: #204361;
     color: #ffffff;
     padding: 40px 0 20px;
     position: relative;
